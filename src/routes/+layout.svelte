@@ -6,9 +6,8 @@
   import Footer from "../components/footer.svelte";
   import "@fortawesome/fontawesome-free/css/all.min.css";
 </script>
-
-
   <main>
+    
     <Navbar />
     <div class="About" id="About">
       <Profile />
