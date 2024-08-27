@@ -22,8 +22,6 @@
     <div id="contact"><Footer /></div>
   </main>
 
-
-
 <style>
   .About {
     background-color: hsl(279, 70%, 96%);
