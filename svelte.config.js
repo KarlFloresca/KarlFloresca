@@ -1,13 +1,14 @@
-import adapter from '@sveltejs/adapter-static';
+import { sveltekit } from '@sveltejs/kit/vite';
 
-export default {
-	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: undefined,
-			precompress: false,
-			strict: true
-		})
-	}
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  kit: {
+
+    files: {
+      appTemplate: 'index.html'
+    }
+  },
+  plugins: [sveltekit()]
 };
+
+export default config;
